@@ -1,16 +1,7 @@
-// /** @type {import('tailwindcss').Config} */
-// export default {
-//   content: [
-//     "./index.html",
-//     "./src/**/*.{js,ts,jsx,tsx,html}",
-//   ],
-//   theme: {
-//     extend: {},
-//   },
-//   plugins: [daisyui],
-// }
+import daisyui from "daisyui";
 
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+const config = {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx,html}",
@@ -18,5 +9,18 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require("daisyui")],
+  plugins: [daisyui],
 };
+
+export default config;
+
+// module.exports = {
+//   content: [
+//     "./index.html",
+//     "./src/**/*.{js,ts,jsx,tsx,html}",
+//   ],
+//   theme: {
+//     extend: {},
+//   },
+//   plugins: [require("daisyui")],
+// };
