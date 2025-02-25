@@ -51,7 +51,7 @@ function Signup() {
         e.preventDefault();
 
         if (validateForm()) {
-            axios.post("http://localhost:2000/user/signup", userData)
+            axios.post("https://shopy-shop-bsmy.onrender.com/user/signup", userData)
                 .then(res => console.log(res))
                 .catch(error => console.log(error));
         }
