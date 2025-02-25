@@ -43,9 +43,14 @@ userRouter.post("/login",userLogin)
 app.use("/user",userRouter)
 
 //listen
-const PORT=process.env.PORT || 2000;
-const hostname= process.env.HOST_ADD || "localhost";
-app.listen(PORT,hostname,()=>{
-    console.log(`server is running in http://${hostname}:${PORT}`);
-    dbConnect()
-})
+// const PORT=process.env.PORT || 2000;
+// const hostname= process.env.HOST_ADD || "localhost";
+// app.listen(PORT,hostname,()=>{
+//     console.log(`server is running in http://${hostname}:${PORT}`);
+//     dbConnect()
+// })
+
+const port = process.env.PORT || 2000;
+app.listen(port, '0.0.0.0', () => {
+    console.log(`Server is running on port ${port}`);
+});
