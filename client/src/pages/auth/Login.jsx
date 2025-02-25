@@ -19,7 +19,7 @@ function Login() {
     const handelSubmit = (e) => {
         e.preventDefault();
         if (userData.email && userData.password) {
-            axios.post("https://shopy-shop-bsmy.onrender.com/user/login", userData)
+            axios.get("https://shopy-shop-bsmy.onrender.com/user/login", userData)
                 .then(res => {
                     if (res.status === 200) {
                         const userData = res.data; // Assuming your API returns user data

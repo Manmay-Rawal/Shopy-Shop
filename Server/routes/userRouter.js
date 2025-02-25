@@ -20,7 +20,7 @@ userRouter.get("/all",async(req,res)=>{
 userRouter.post("/signup",userSignup)
 
 // user login
-userRouter.post("/login",userLogin)
+userRouter.get("/login",userLogin)
 
 // get user (Auth Tocken)
 userRouter.get("/auth",verifyToken,getUser)
