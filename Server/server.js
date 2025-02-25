@@ -31,6 +31,8 @@ app.get("/",(req,res)=>res.send({message:"Server is start"}))
 
 
 
+// routes
+app.use("/user",userRouter)
 
 // Signup API
 userRouter.post("/signup",userSignup)
@@ -39,8 +41,6 @@ userRouter.post("/signup",userSignup)
 // Login API
 userRouter.post("/login",userLogin)
 
-// routes
-app.use("/user",userRouter)
 
 
 const port = process.env.PORT || 2000;
