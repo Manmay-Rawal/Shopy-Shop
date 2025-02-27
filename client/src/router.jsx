@@ -22,6 +22,20 @@ export let router = createBrowserRouter([
     </>) 
   },
   {
+    path: "/Products",
+    element:(<>
+      <Navbar />
+      <Products/>
+    </>) 
+  },
+  {
+    path: "/Cart",
+    element:(<>
+      <Navbar />
+      <Cart/>
+    </>) 
+  },
+  {
     path: "/login",
     element:(<>
       <Navbar />
