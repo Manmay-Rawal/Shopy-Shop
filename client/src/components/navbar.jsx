@@ -1,7 +1,8 @@
 import React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuth } from '../pages/auth/AuthContext'; // Import the context
-import Shopy from '../image/Shopy-Shop.jpg'
+import Shopy from '../image/Shopy-Shop.jpg';
+import { FaShoppingCart } from "react-icons/fa";
 
 function Navbar() {
     const { user, logout } = useAuth(); // Get user and logout from context
