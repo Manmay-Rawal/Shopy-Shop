@@ -46,5 +46,6 @@ userRouter.post("/login",userLogin)
 const port = process.env.PORT || 2000;
 app.listen(port, '0.0.0.0', () => {
     console.log(`Server is running on port ${port}`);
+    console.log(`https://shopy-shop-bsmy.onrender.com`);
     dbConnect();
 });
