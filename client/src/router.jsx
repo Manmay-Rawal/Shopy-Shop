@@ -4,6 +4,8 @@ import About from "./pages/About";
 import Login from "./pages/auth/Login";
 import Signup from "./pages/auth/Signup";
 import Navbar from "./components/navbar";
+import Products from "./components/Products";
+import Cart from "./components/Cart";
 
 
 export let router = createBrowserRouter([
