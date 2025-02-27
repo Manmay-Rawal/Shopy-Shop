@@ -42,7 +42,8 @@ const Products = () => {
         </div>
       </div>
 
-      
+      {/* Cart Component */}
+      <Cart cart={cart} />
     </div>
   );
 };
